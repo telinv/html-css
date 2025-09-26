@@ -3,14 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li>бургер меню</li>
+          <li>
+            <div class="menu">
+              <input
+                type="checkbox"
+                id="burger-checkbox"
+                class="burger-checkbox"
+              />
+              <label for="burger-checkbox" class="burger"></label>
+              <ul class="menu-list">
+                <li><a href="#" class="menu-item">Главная</a></li>
+                <li></li>
+                <li><a href="#" class="menu-item">О нас</a></li>
+                <li></li>
+                <li><a href="#" class="menu-item">Команда</a></li>
+                <li></li>
+                <li><a href="#" class="menu-item">Контакты</a></li>
+                <li></li>
+              </ul>
+            </div>
+          </li>
           <li>язык</li>
           <li><button>Войти</button></li>
         </ul>
@@ -24,8 +43,102 @@
       <div>
         <button>Расширенный поиск</button>
         <button>Атрибутный поиск</button>
+        <div class="card-contiainer">
+          <div class="card">
+            <img src="imags/card-1__logo.png" alt="" />
+            <h2>Цели и задачи</h2>
+            <p>
+              Электронная библиотека ИТМО ориентирована на обеспечение
+              информационных потребностей пользователей в процессе обучения и
+              научной деятельности. В ней содержатся учебная и
+              учебно-методическая литература, авторефераты диссертаций, научные
+              статьи из периодических изданий, документы по истории университета
+              и другие материалы.
+            </p>
+          </div>
+          <div class="card">
+            <img src="imags/card-2__logo.png" alt="" />
+            <h2>Личный кабинет</h2>
+            <p>
+              Авторизованные пользователи имеют возможность пользоваться
+              дополнительными сервисами Личного кабинета, включая создание
+              списков электронных ресурсов, сохранение поисковых запросов,
+              создание конспектов из фрагментов электронных произведений.
+              Фрагменты произведения могут быть скопированы только из ресурсов,
+              для которых разрешено копирование.
+            </p>
+          </div>
+          <div class="card">
+            <img src="imags/card-3__logo.png" alt="" />
+            <h2>Авторам</h2>
+            <p>
+              Порядок приема и использования произведений регулируются в
+              соответствии с действующим законодательством, локальными
+              нормативными актами СПбПУ и прямыми договорами с
+              правообладателями. На сайте ФБ СПбПУ приведена информация для
+              авторов, включая порядок приема и оформления электронных
+              документов.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <img src="imags/footer__logo.png" alt="логотип" />
+      <h1>Университет ИТМО</h1>
+      <ul>
+        <li>Студентам</li>
+        <li>Сервисы</li>
+        <li>Контакты</li>
+        <li>Партнерам</li>
+      </ul>
+      <div class="socials">
+        <h2>Социальные сети</h2>
+        <ul>
+          <li>
+            <img src="imags/vk__logo.png" alt="ссылка на страницу вконтакте" />
+          </li>
+          <li>
+            <img
+              src="imags/instagram__logo.png"
+              alt="ссылка на страницу инстаграм"
+            />
+          </li>
+          <li>
+            <img
+              src="imags/twitter__logo.png"
+              alt="ссылка на страницу twitter"
+            />
+          </li>
+          <li>
+            <img
+              src="imags/telegram__logo.png"
+              alt="ссылка на страницу telegram"
+            />
+          </li>
+          <li>
+            <img
+              src="imags/odnoclassniki__logo.png"
+              alt="ссылка на страницу одноклассники"
+            />
+          </li>
+        </ul>
+        <h2>мобильные приложения</h2>
+        <ul>
+          <li>
+            <img
+              src="imags/iphone__logo.png"
+              alt="ссылка на мобильное приложение для iphone"
+            />
+          </li>
+          <li>
+            <img
+              src="imags/googleplay__logo.png"
+              alt="ссылка на мобильное приложение для google play"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
