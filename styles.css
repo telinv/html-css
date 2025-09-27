@@ -168,3 +168,9 @@
 .specific-search-button button{
   width: 158px;
 }
+main{
+  background:     linear-gradient(0deg,  #1946BAD9 33%, #ffffffd9 33%);
+}
+footer{
+  background-color: #1946BAD9;
+}
