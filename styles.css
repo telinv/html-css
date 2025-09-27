@@ -78,6 +78,18 @@
     transform: translateX(0);
   }
   /* burger-menu end */
+
+  #language{
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    color: #9F9F9F;
+    margin-right: 25px;
+}
+#language option{
+ color: black;
+}
+
   .header-nav-ul {
     display: flex;
     flex-direction: row;
