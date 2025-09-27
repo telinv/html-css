@@ -89,7 +89,6 @@
 #language option{
  color: black;
 }
-
   .header-nav-ul {
     display: flex;
     flex-direction: row;
@@ -100,7 +99,7 @@
   ul{
     list-style-type: none;
   }
-  .sign-in-button {
+  .sign-in-button, .specific-search-button button {
     background-color: #1946BAD9;
     opacity: 0.85;
     border-radius: 6px;
@@ -113,3 +112,59 @@
     border: none;
     cursor: pointer;
   }
+  .search-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .search-container h1{
+    font-size: 22px;
+  }
+  
+  .search-input form {
+    position: relative;
+    width: 353px;
+    margin: 0 auto;
+  }
+  .search-input input, .search-input button, .specific-search-button button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .search-input input {
+    width: 100%;
+    height: 57px;
+    box-shadow: -4px 4px 45px -7px rgba(34, 60, 80, 0.42);
+    padding-left: 15px;
+    font-size: 18px;
+  }
+  .search-input button {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 16px;
+    right: 0px;
+    cursor: pointer;
+    background-color: white;
+  }
+  .search-input button::before {
+    content: url('imgs/lens.png');
+  }
+  .search-input button::after {
+    content: " ";
+    background: #CCCCCC;
+    display: block;
+    position: absolute;
+    bottom: -6.5px;
+    right: 37px;
+    height: 40px;
+    width: 1.5px;
+  }
+.specific-search-button{
+  display: flex;
+  gap: 20px;
+}
+.specific-search-button button{
+  width: 158px;
+}
