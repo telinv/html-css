@@ -2,6 +2,7 @@
   font-size: 12px;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;;
 }
 /* burger-menu start */
 .burger-checkbox {
@@ -192,7 +193,6 @@ main{
   height: 23px;
 }
 .card p{
-  font-size: 11px;
   color: #9F9F9F;
 }
 .card img{
@@ -209,6 +209,13 @@ main{
 }
 footer{
   background-color: #1946BAD9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+}
+footer h2, footer li{
+  opacity: 0.9;
 }
 .building{
   height: 400px;
