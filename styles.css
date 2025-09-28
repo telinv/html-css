@@ -210,3 +210,11 @@ main{
 footer{
   background-color: #1946BAD9;
 }
+.building{
+  height: 400px;
+  width: 100%;
+  background-image: url(imgs/building.png);
+  background-size: 100% 365px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
