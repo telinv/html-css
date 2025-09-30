@@ -248,6 +248,7 @@ footer h1, footer h2{
   justify-content: center;
   gap: 25px;
   margin-left: 90px;
+  padding: 5% 0;
 }
 .img-rectangle{
   position: relative;
@@ -262,6 +263,7 @@ footer h1, footer h2{
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
+  padding-bottom: 10%;
 }
 .download-icons li{
   display: flex;
@@ -345,4 +347,17 @@ footer h1, footer h2{
 }
 .footer-nav > li.active::before {
   transform: rotate(180deg);
+}
+
+@media (max-width: 950px) {
+  main {
+    background: linear-gradient(0deg, #1946BAD9 65%, #ffffffd9 33%);
+}
+  .card-container{
+    flex-direction: column;
+  }
+  .card{
+    width: 315px;
+    padding: 20% 7%;
+  }
 }
