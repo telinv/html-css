@@ -106,12 +106,12 @@
       </div>
     </main>
     <footer>
-      <div class="building"></div>
+      <!-- <div class="building"></div> -->
       <img class="footer-logo" src="imgs/logo-white.png" alt="логотип" />
       <h1>Университет ИТМО</h1>
       <ul class="footer-nav">
         <li class="submenu-link">
-          Студентам
+          <button class="submenu-toggle">Студентам</button>
           <ul class="submenu">
             <li><a href="">Обучение</a></li>
             <li><a href="">Студенческая жизнь</a></li>
@@ -186,6 +186,33 @@
       </div>
     </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButtons = document.querySelectorAll(".submenu-toggle");
+
+      toggleButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const submenu = this.nextElementSibling;
+
+          document.querySelectorAll(".submenu").forEach((menu) => {
+            if (menu !== submenu) {
+              menu.classList.remove("active");
+            }
+          });
+
+          submenu.classList.toggle("active");
+        });
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!event.target.closest(".submenu-link")) {
+          document.querySelectorAll(".submenu").forEach((menu) => {
+            menu.classList.remove("active");
+          });
+        }
+      });
+    });
+  </script>
   <script
     src="https://kit.fontawesome.com/7819fd0fdd.js"
     crossorigin="anonymous"

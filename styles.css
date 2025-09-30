@@ -214,6 +214,7 @@ footer{
   align-items: center;
   color: #FFFFFF;
   gap: 25px;
+  padding-top: 50px;
 }
 footer h2, footer li{
   opacity: 0.9;
@@ -272,4 +273,43 @@ footer h1, footer h2{
   font-size: 15px;
   font-weight: 400;
   opacity: 0.6;
+}
+
+.footer-nav li, .footer-nav li button {
+  font-size: 16px;
+  color: #FFFFFFE5;
+}
+.footer-nav li{
+  margin-bottom: 20px;
+  position: relative;
+}
+.footer-nav button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.footer-nav button:hover,
+.footer-nav button:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 10px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.submenu.active {
+  max-height: 300px;
+  opacity: 1;
+  padding: 10px;
+  transform: translateY(0);
+}
+.submenu a{
+  color: #FFFFFFE5;
+  text-decoration: none;
 }
