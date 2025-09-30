@@ -106,7 +106,6 @@
       </div>
     </main>
     <footer>
-      <!-- <div class="building"></div> -->
       <img class="footer-logo" src="imgs/logo-white.png" alt="логотип" />
       <h1>Университет ИТМО</h1>
       <ul class="footer-nav">
@@ -193,14 +192,21 @@
       toggleButtons.forEach((button) => {
         button.addEventListener("click", function () {
           const submenu = this.nextElementSibling;
+          const parentLi = this.closest(".submenu-link");
 
           document.querySelectorAll(".submenu").forEach((menu) => {
             if (menu !== submenu) {
               menu.classList.remove("active");
             }
           });
+          document.querySelectorAll(".submenu-link").forEach((li) => {
+            if (li !== parentLi) {
+              li.classList.remove("active");
+            }
+          });
 
           submenu.classList.toggle("active");
+          parentLi.classList.toggle("active");
         });
       });
 
@@ -208,6 +214,9 @@
         if (!event.target.closest(".submenu-link")) {
           document.querySelectorAll(".submenu").forEach((menu) => {
             menu.classList.remove("active");
+          });
+          document.querySelectorAll(".submenu-link").forEach((li) => {
+            li.classList.remove("active");
           });
         }
       });

@@ -306,10 +306,21 @@ footer h1, footer h2{
 .submenu.active {
   max-height: 300px;
   opacity: 1;
-  padding: 10px;
+  padding: 10px 10px 0 30px;
   transform: translateY(0);
+}
+.submenu a:hover {
+  color: #ffffff;
 }
 .submenu a{
   color: #FFFFFFE5;
   text-decoration: none;
+}
+.footer-nav > li::before{
+  content: '\005E\0020';
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+.footer-nav > li.active::before {
+  transform: rotate(180deg);
 }
