@@ -3,7 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Электронная библиотека ИТМО</title>
   </head>
-  <body></body>
+  <body class="body-404">
+    <header>
+      <nav>
+        <ul class="header-nav-ul-404">
+          <li>
+            <div class="menu">
+              <input
+                type="checkbox"
+                id="burger-checkbox"
+                class="burger-checkbox"
+              />
+              <label for="burger-checkbox" class="burger"></label>
+              <div class="overlay"></div>
+              <ul class="menu-list">
+                <img
+                  class="menu-item avatar"
+                  src="imgs/avatar.png"
+                  alt="аватар"
+                />
+                <li class="menu-item" id="name">Имя Фамилия</li>
+                <li class="menu-item" id="position">Профессор Профессоров</li>
+                <li>
+                  <a href="index.html" class="menu-item">Главная страница</a>
+                </li>
+                <li><a href="#" class="menu-item">Расширенный поиск</a></li>
+                <li><a href="#" class="menu-item">Аттрибутный поиск</a></li>
+                <li><a href="#" class="menu-item">Сменить язык</a></li>
+                <li class="menu-item">Служба поддержки</li>
+                <li class="menu-item">О сервисе</li>
+                <button class="menu-item button">Новая публикация</button>
+              </ul>
+            </div>
+          </li>
+          <li class="logo-404">
+            <img src="imgs/logo-white.png" alt="логотип" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Ой, 404!</h1>
+      <p>Запрашиваемая страницая не найдена</p>
+      <div class="search-input">
+        <form action="/search" method="get">
+          <input type="text" placeholder="Поиск по сайту" />
+          <button type="submit"></button>
+        </form>
+      </div>
+      <button>На главную</button>
+    </main>
+    <footer class="footer-404"></footer>
+  </body>
 </html>

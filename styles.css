@@ -144,7 +144,7 @@
 #language option{
  color: black;
 }
-  .header-nav-ul {
+  .header-nav-ul, .header-nav-ul-404 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -166,6 +166,10 @@
     text-decoration: none;
     border: none;
     cursor: pointer;
+  }
+  .specific-search-button button a{
+    text-decoration: none;
+    color: #FFFFFF;
   }
   .search-container{
     display: flex;
@@ -466,4 +470,15 @@ footer h1, footer h2{
   .card p{
     font-size: 10px;
   }
+}
+
+/* 404 */
+.body-404{
+  background-color: #1946BAD9;
+}
+.header-nav-ul-404{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  align-items: center;
 }
