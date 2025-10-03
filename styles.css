@@ -309,6 +309,21 @@ footer h1, footer h2{
   z-index: 2;
   margin: 25px 0px 0 -60px;
 }
+.vk{
+  margin: 30px 0px 0px -61px;
+}
+.instagram{
+  margin: 20px 0px 0px -60px;
+}
+.twitter{
+  margin: 24px 0px 0px -58px;
+}
+.telegram{
+  margin: 22px 0px 0px -66px;
+}
+.odnoklassniki{
+  margin: 20px 0px 0px -52px;
+}
 .download-icons{
   display: flex;
   align-items: flex-end;
