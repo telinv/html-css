@@ -349,7 +349,7 @@ footer h1, footer h2{
   transform: rotate(180deg);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   main {
     background: linear-gradient(0deg, #1946BAD9 65%, #ffffffd9 33%);
 }
@@ -359,5 +359,18 @@ footer h1, footer h2{
   .card{
     width: 315px;
     padding: 20% 7%;
+  }
+}
+
+@media (max-width: 450px) {
+  .social-links{
+    margin-left: 50px;
+  }
+  .card{
+    width: 210px;
+    padding: 13% 7%;
+  }
+  .card p{
+    font-size: 10px;
   }
 }
