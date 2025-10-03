@@ -96,6 +96,9 @@
     cursor: pointer;
     padding: 3% 7%;
   }
+  .button:hover{
+    background-color: #EC1947;
+  }
   .burger-checkbox:checked ~ .menu-list {
     transform: translateX(0);
   }
@@ -120,11 +123,12 @@
   body:has(.burger-checkbox:checked) {
     overflow: hidden;
   }
-  .name {
+  #name {
+    font-weight: 600;
     font-size: 18px;
     margin: -24px
   }
-  .position {
+  #position {
     font-size: 12px;
     margin-bottom: 30px;
   }
@@ -424,6 +428,30 @@ footer h1, footer h2{
   .card{
     width: 315px;
     padding: 20% 7%;
+  }
+  #name{
+    font-size: 16px;
+  }
+  #position{
+    font-size: 12px;
+  }
+  .menu-item{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-list{
+    width: 40%;
+  }
+  #name{
+    font-size: 14px;
+  }
+  #position{
+    font-size: 10px;
+  }
+  .menu-item{
+    font-size: 11px;
   }
 }
 
