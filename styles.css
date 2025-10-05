@@ -518,3 +518,31 @@ footer h1, footer h2{
 .footer-404{
   background: none;
 }
+@media (max-width: 600px){
+  .main-404 h1{
+    font-size: 60px;
+  }
+  .main-404 p{
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px){
+  .main-404 h1{
+    font-size: 50px;
+  }
+  .main-404 p{
+    font-size: 14px;
+  }
+  .to-index-button a{
+    font-size: 12px;
+  }
+  .search-input-404 input{
+    height: 47px;
+  }
+  .search-input-404 button::after{
+    bottom: -1.5px;
+  }
+  .search-input-404 button{
+    top: 13px;
+  }
+}
