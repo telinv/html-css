@@ -181,24 +181,24 @@
     font-size: 22px;
   }
   
-  .search-input form {
+  .search-input form, .search-input-404 form {
     position: relative;
     width: 353px;
     margin: 0 auto;
   }
-  .search-input input, .search-input button, .specific-search-button button {
+  .search-input input,.search-input-404 input, .search-input button,.search-input-404 button, .specific-search-button button {
     border: none;
     outline: none;
     border-radius: 5px;
   }
-  .search-input input {
+  .search-input input, .search-input-404 input {
     width: 100%;
     height: 57px;
     box-shadow: -4px 4px 45px -7px rgba(34, 60, 80, 0.42);
     padding-left: 15px;
     font-size: 18px;
   }
-  .search-input button {
+  .search-input button, .search-input-404 button {
     height: 26px;
     width: 26px;
     position: absolute;
@@ -207,10 +207,10 @@
     cursor: pointer;
     background-color: white;
   }
-  .search-input button::before {
+  .search-input button::before, .search-input-404 button::before{
     content: url('imgs/lens.png');
   }
-  .search-input button::after {
+  .search-input button::after, .search-input-404 button::after {
     content: " ";
     background: #CCCCCC;
     display: block;
@@ -481,4 +481,40 @@ footer h1, footer h2{
   grid-template-columns: 1fr 1fr;
   justify-items: start;
   align-items: center;
+}
+.search-input-404 input::after{
+  content: "&#10005";
+    position: relative;
+    z-index: 3;
+}
+.main-404{
+  background: none;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: 90vh;
+  justify-content: center;
+}
+.main-404 h1{
+  font-size: 70px;
+}
+.main-404 p{
+  font-size: 21px;
+  margin-top: -25px;
+}
+.to-index-button{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1.5% 4%;
+}
+.to-index-button a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 18px;
+}
+.footer-404{
+  background: none;
 }
